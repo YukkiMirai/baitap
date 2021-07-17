@@ -1,0 +1,23 @@
+<p>person-list works!</p>
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">ID</th>
+      <th scope="col">First Name</th>
+      <th scope="col">Last Name</th>
+      <th scope="col">Age</th>
+      <th scope="col">email</th>
+      <th scope="col">Handle</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let tempPerson of persons">
+      <th scope="row">{{tempPerson.id}}</th>
+      <td>{{tempPerson.firstName}}</td>
+      <td>{{tempPerson.lastName}}</td>
+      <td>{{tempPerson.age}}</td>
+      <td>{{tempPerson.email}}</td>
+      <td><a href="detail/{{tempPerson.id}}">Detail</a></td>
+    </tr>
+  </tbody>
+</table>
