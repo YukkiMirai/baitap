@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, } from '@angular/core';
 import { Person } from '../common/person';
 import { PersonService } from '../service/person-service';
 
@@ -9,12 +9,17 @@ import { PersonService } from '../service/person-service';
 })
 export class PersonListComponent implements OnInit {
 
+  id: number = 2;
+
   persons: Person[] = [];
 
   constructor(private personService: PersonService) { }
 
+
   ngOnInit(): void {
     this.persons = this.personService.getPersonList();
+
   }
+
 
 }

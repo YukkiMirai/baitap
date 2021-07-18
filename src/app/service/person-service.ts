@@ -11,7 +11,7 @@ export class PersonService {
       "id": 1,
       firstName: "Asuna",
       lastName: "Yuuki",
-      age: 20,
+      age: 16,
       email: "yukki@gmail.com",
     },
     {
@@ -39,7 +39,7 @@ export class PersonService {
       "id": 5,
       firstName: "Asuna5",
       lastName: "Yuuki5",
-      age: 16,
+      age: 20,
       email: "yukki@gmail.com5",
     },
   ]

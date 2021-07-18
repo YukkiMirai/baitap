@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Person } from '../common/person';
 import { PersonListComponent } from '../person-list/person-list.component';
@@ -10,6 +10,8 @@ import { PersonService } from '../service/person-service';
   styleUrls: ['./person-detail.component.css']
 })
 export class PersonDetailComponent implements OnInit {
+
+  @Input() theId = 0;
 
   currentPersonId!: number;
 
@@ -29,7 +31,13 @@ export class PersonDetailComponent implements OnInit {
       this.currentPersonId = 1;
     }
 
+    if (this.theId != 0) {
+      this.currentPersonId = this.theId;
+    }
+
     this.tempPerson = this.personService.getPersonById(this.currentPersonId);
+
+
 
   }
 
