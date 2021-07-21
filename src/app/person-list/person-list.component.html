@@ -19,9 +19,9 @@
       <td>{{tempPerson.age}}</td>
       <td>{{tempPerson.email}}</td>
       <td><a href="detail/{{tempPerson.id}}">Detail</a></td>
-      <td><button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
-          modal
-        </button></td>
+      <td>
+        <app-person-detail-modal [theId]=tempPerson.id></app-person-detail-modal>
+      </td>
     </tr>
 
 

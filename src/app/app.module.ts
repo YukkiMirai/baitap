@@ -7,6 +7,7 @@ import { PersonListComponent } from './person-list/person-list.component';
 import { PersonDetailComponent } from './person-detail/person-detail.component';
 
 import { RouterModule, Routes } from '@angular/router';
+import { PersonDetailModalComponent } from './person-detail-modal/person-detail-modal.component';
 
 export const routes: Routes = [
   { path: 'person-list', component: PersonListComponent },
@@ -17,7 +18,8 @@ export const routes: Routes = [
   declarations: [
     AppComponent,
     PersonListComponent,
-    PersonDetailComponent
+    PersonDetailComponent,
+    PersonDetailModalComponent
   ],
   imports: [
     RouterModule.forRoot(routes),

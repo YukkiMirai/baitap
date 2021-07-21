@@ -36,9 +36,6 @@ export class PersonDetailComponent implements OnInit {
     }
 
     this.tempPerson = this.personService.getPersonById(this.currentPersonId);
-
-
-
   }
 
 }
